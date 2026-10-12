@@ -28,7 +28,284 @@
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
                     },
-                    animation: {
+                    animation: {<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoreBoost Ecommerce Services | Scale Your Online Store</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkCharcoal: '#12181b',
+                        emeraldGreen: '#064e3b',
+                        accentOrange: '#f97316',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes pulse-slow {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.9; }
+        }
+        .pulse-glow {
+            animation: pulse-slow 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-darkCharcoal text-white font-sans antialiased selection:bg-emeraldGreen selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-emerald-900/60 border-b border-emerald-700/40 text-xs sm:text-sm py-2 px-4 text-center text-emerald-200">
+        🚀 Special Offer: Get a <span class="font-bold text-accentOrange">Free Quick Store Review</span> today via WhatsApp or DM!
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-darkCharcoal/90 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-accentOrange flex items-center justify-center shadow-lg">
+                    <i class="fa-solid fa-cart-shopping text-white text-lg"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-wider bg-gradient-to-r from-white via-gray-200 to-emerald-400 bg-clip-text text-transparent">STOREBOOST</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-emerald-400 font-semibold">Ecommerce Services</span>
+                </div>
+            </div>
+
+            <!-- Desktop Nav Links & Socials -->
+            <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-300">
+                <a href="#services" class="hover:text-emerald-400 transition">Services</a>
+                <a href="#calculator" class="hover:text-emerald-400 transition">Free Store Review</a>
+                <a href="#platforms" class="hover:text-emerald-400 transition">Platforms</a>
+                
+                <div class="flex items-center space-x-3 pl-4 border-l border-gray-700">
+                    <a href="https://www.facebook.com/share/1CYDc55nTn/" target="_blank" class="w-9 h-9 rounded-full bg-gray-800 hover:bg-blue-600 flex items-center justify-center text-gray-300 hover:text-white transition shadow" title="Facebook Page">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="w-9 h-9 rounded-full bg-gray-800 hover:bg-pink-600 flex items-center justify-center text-gray-300 hover:text-white transition shadow" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/?text=Hi%20StoreBoost,%20I%20need%20help%20with%20my%20store!" target="_blank" class="w-9 h-9 rounded-full bg-emerald-600 hover:bg-emerald-500 flex items-center justify-center text-white transition shadow" title="WhatsApp Chat">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile CTA Button -->
+            <div class="md:hidden">
+                <a href="https://wa.me/?text=Hi%20StoreBoost,%20I%20want%20a%20free%20store%20review!" target="_blank" class="bg-emerald-600 text-white text-xs px-4 py-2 rounded-lg font-bold shadow">
+                    <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden bg-gradient-to-b from-darkCharcoal via-[#0d231a] to-darkCharcoal py-20 lg:py-32 border-b border-gray-800">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#059669_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-6">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Professional Ecommerce Agency
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
+                Supercharge Your <span class="bg-gradient-to-r from-emerald-400 to-accentOrange bg-clip-text text-transparent">Ecommerce Sales</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
+                We help online sellers with product listings, store setup, shipping support & daily store management on Shopify, Amazon, Etsy and more.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#calculator" class="w-full sm:w-auto bg-gradient-to-r from-accentOrange to-amber-600 hover:from-amber-600 hover:to-accentOrange text-white font-bold px-8 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-calculator mr-2"></i> Get Free Store Review
+                </a>
+                <a href="https://www.facebook.com/share/1CYDc55nTn/" target="_blank" class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 text-white font-semibold px-8 py-4 rounded-xl border border-gray-700 transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-facebook-f text-blue-400"></i> Visit Facebook Page
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-xs font-bold tracking-widest text-emerald-400 uppercase mb-3">Our Core Expertise</h2>
+            <h3 class="text-3xl sm:text-4xl font-bold">Complete Store Solutions for Sellers</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-gray-900/60 border border-gray-800 p-8 rounded-2xl hover:border-emerald-500/50 transition group">
+                <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Product Listings & Optimization</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">SEO-optimized titles, persuasive descriptions, high-converting bullet points, and clean catalog formatting.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-gray-900/60 border border-gray-800 p-8 rounded-2xl hover:border-emerald-500/50 transition group">
+                <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Bulk Uploads & Migration</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Seamlessly upload hundreds or thousands of SKUs via CSV or inventory feeds without errors.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-gray-900/60 border border-gray-800 p-8 rounded-2xl hover:border-emerald-500/50 transition group">
+                <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Complete Store Setup</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">From theme customization and payment gateways to domain setup and shipping profiles ready for sales.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-gray-900/60 border border-gray-800 p-8 rounded-2xl hover:border-emerald-500/50 transition group">
+                <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Order & Shipping Support</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Fulfillment tracking, inventory synchronization, and customer shipping inquiry support.</p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="bg-gray-900/60 border border-gray-800 p-8 rounded-2xl hover:border-emerald-500/50 transition group">
+                <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Daily Store Management</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Ongoing upkeep, inventory updates, pricing adjustments, and daily maintenance so you can focus on scaling.</p>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="bg-gray-900/60 border border-gray-800 p-8 rounded-2xl hover:border-emerald-500/50 transition group">
+                <div class="w-14 h-14 rounded-xl bg-accentOrange/10 text-accentOrange flex items-center justify-center text-2xl mb-6 group-hover:bg-accentOrange group-hover:text-white transition">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Free Quick Store Review</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Get actionable feedback on your store's layout, conversion blockers, and listing optimization.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Free Store Review Calculator -->
+    <section id="calculator" class="py-20 bg-gradient-to-b from-darkCharcoal via-emerald-950/30 to-darkCharcoal border-y border-gray-800">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gray-900 border border-emerald-500/30 rounded-3xl p-6 sm:p-10 shadow-2xl relative">
+                <div class="absolute -top-4 right-6 bg-accentOrange text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
+                    Interactive Tool
+                </div>
+
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl sm:text-3xl font-bold mb-2">Request Your Free Store Review</h3>
+                    <p class="text-gray-400 text-sm">Select your platform and primary need below to generate your review request.</p>
+                </div>
+
+                <form id="reviewForm" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2 text-gray-300">1. Select Your Primary Selling Platform:</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                            <label class="border border-gray-700 bg-gray-800/50 rounded-xl p-3 text-center cursor-pointer hover:border-emerald-500 has-[:checked]:border-emerald-500 has-[:checked]:bg-emerald-950/40 transition">
+                                <input type="radio" name="platform" value="Shopify" class="hidden" checked>
+                                <span class="block font-medium text-sm">Shopify</span>
+                            </label>
+                            <label class="border border-gray-700 bg-gray-800/50 rounded-xl p-3 text-center cursor-pointer hover:border-emerald-500 has-[:checked]:border-emerald-500 has-[:checked]:bg-emerald-950/40 transition">
+                                <input type="radio" name="platform" value="Amazon" class="hidden">
+                                <span class="block font-medium text-sm">Amazon</span>
+                            </label>
+                            <label class="border border-gray-700 bg-gray-800/50 rounded-xl p-3 text-center cursor-pointer hover:border-emerald-500 has-[:checked]:border-emerald-500 has-[:checked]:bg-emerald-950/40 transition">
+                                <input type="radio" name="platform" value="Etsy" class="hidden">
+                                <span class="block font-medium text-sm">Etsy</span>
+                            </label>
+                            <label class="border border-gray-700 bg-gray-800/50 rounded-xl p-3 text-center cursor-pointer hover:border-emerald-500 has-[:checked]:border-emerald-500 has-[:checked]:bg-emerald-950/40 transition">
+                                <input type="radio" name="platform" value="Other" class="hidden">
+                                <span class="block font-medium text-sm">Other</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold mb-2 text-gray-300">2. What do you need help with most?</label>
+                        <select id="serviceNeed" class="w-full bg-gray-800 border border-gray-700 rounded-xl p-3 text-sm focus:outline-none focus:border-emerald-500">
+                            <option value="Product Listings & Optimization">Product Listings & Optimization</option>
+                            <option value="Bulk Uploads">Bulk Uploads</option>
+                            <option value="Complete Store Setup">Complete Store Setup</option>
+                            <option value="Order & Shipping Support">Order & Shipping Support</option>
+                            <option value="Daily Store Management">Daily Store Management</option>
+                        </select>
+                    </div>
+
+                    <div class="pt-4">
+                        <button type="button" onclick="submitReview()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Send Review Request on WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Supported -->
+    <section id="platforms" class="py-16 max-w-7xl mx-auto px-4 text-center">
+        <h4 class="text-sm font-semibold tracking-widest uppercase text-gray-400 mb-8">Supported Marketplaces & Platforms</h4>
+        <div class="flex flex-wrap justify-center items-center gap-8 sm:gap-16 opacity-80">
+            <div class="flex items-center gap-2 text-xl font-bold"><i class="fa-brands fa-shopify text-emerald-400"></i> Shopify</div>
+            <div class="flex items-center gap-2 text-xl font-bold"><i class="fa-brands fa-amazon text-amber-500"></i> Amazon</div>
+            <div class="flex items-center gap-2 text-xl font-bold"><i class="fa-solid fa-store text-orange-500"></i> Etsy</div>
+            <div class="flex items-center gap-2 text-xl font-bold"><i class="fa-solid fa-globe text-blue-400"></i> & More</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center text-white font-bold text-sm">SB</div>
+                <span class="text-lg font-bold">StoreBoost Ecommerce Services</span>
+            </div>
+            
+            <p class="text-sm text-gray-400 text-center">
+                © <span id="year"></span> StoreBoost. All rights reserved. DM us for a free store review.
+            </p>
+
+            <div class="flex items-center space-x-4">
+                <a href="https://www.facebook.com/share/1CYDc55nTn/" target="_blank" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-facebook-f text-lg"></i></a>
+                <a href="https://instagram.com" target="_blank" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="https://wa.me/?text=Hi%20StoreBoost" target="_blank" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/?text=Hi%20StoreBoost,%20I%20want%20a%20free%20store%20review!" target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-400 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl pulse-glow text-2xl transition transform hover:scale-110" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        function submitReview() {
+            const platform = document.querySelector('input[name="platform"]:checked').value;
+            const service = document.getElementById('serviceNeed').value;
+            
+            const message = `Hi StoreBoost! I'd like a free store review.\n\nPlatform: ${platform}\nMain Need: ${service}`;
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Open WhatsApp with pre-filled message
+            window.open(`https://wa.me/?text=${encodedMessage}`, '_blank');
+        }
+    </script>
+</body>
+</html>
                         'pulse-glow': 'pulseGlow 3s infinite alternate',
                         'float': 'float 4s ease-in-out infinite',
                         'bounce-subtle': 'bounceSubtle 2s infinite',
