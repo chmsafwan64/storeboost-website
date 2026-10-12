@@ -22,6 +22,7 @@
                             glow: '#00ff9d',
                             orange: '#f97316',
                             orangeGlow: '#ff6b00',
+                            whatsapp: '#25D366'
                         }
                     },
                     fontFamily: {
@@ -30,6 +31,7 @@
                     animation: {
                         'pulse-glow': 'pulseGlow 3s infinite alternate',
                         'float': 'float 4s ease-in-out infinite',
+                        'bounce-subtle': 'bounceSubtle 2s infinite',
                     },
                     keyframes: {
                         pulseGlow: {
@@ -39,6 +41,10 @@
                         float: {
                             '0%, 100%': { transform: 'translateY(0px)' },
                             '50%': { transform: 'translateY(-10px)' }
+                        },
+                        bounceSubtle: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' }
                         }
                     }
                 }
@@ -51,7 +57,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Custom CSS for Glassmorphism & Background Grid -->
+    <!-- Custom CSS for Glassmorphism & Styling -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -84,13 +90,13 @@
             box-shadow: 0 0 30px rgba(249, 115, 22, 0.7);
             transform: translateY(-2px);
         }
-        .green-btn-glow {
-            box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+        .whatsapp-glow {
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
             transition: all 0.3s ease;
         }
-        .green-btn-glow:hover {
-            box-shadow: 0 0 30px rgba(16, 185, 129, 0.6);
-            transform: translateY(-2px);
+        .whatsapp-glow:hover {
+            box-shadow: 0 0 30px rgba(37, 211, 102, 0.8);
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -122,8 +128,21 @@
                     <a href="#testimonials" class="text-sm font-medium text-gray-300 hover:text-brand-green transition-colors">Why Us</a>
                 </div>
 
-                <!-- CTA Button Desktop -->
-                <div class="hidden md:flex items-center">
+                <!-- Desktop Social & CTA Buttons -->
+                <div class="hidden md:flex items-center gap-4">
+                    <!-- Social Header Links -->
+                    <div class="flex items-center gap-2 pr-2 border-r border-brand-border">
+                        <a href="https://facebook.com/storeboostecommerceservices" target="_blank" rel="noopener noreferrer" title="Facebook Page" class="text-gray-400 hover:text-blue-500 transition-colors p-1 text-base">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/storeboostecommerceservices" target="_blank" rel="noopener noreferrer" title="Instagram Profile" class="text-gray-400 hover:text-pink-500 transition-colors p-1 text-base">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/15550192834?text=Hi%20StoreBoost,%20I%20am%20interested%20in%20your%20ecommerce%20services!" target="_blank" rel="noopener noreferrer" title="WhatsApp Chat" class="text-gray-400 hover:text-brand-whatsapp transition-colors p-1 text-base">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+
                     <a href="#audit-calculator" class="orange-btn-glow px-5 py-2.5 rounded-full bg-gradient-to-r from-brand-orange to-amber-500 text-white font-semibold text-sm flex items-center gap-2">
                         <i class="fa-solid fa-bolt text-xs"></i>
                         Free Store Review
@@ -131,7 +150,10 @@
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <div class="md:hidden flex items-center">
+                <div class="md:hidden flex items-center gap-3">
+                    <a href="https://wa.me/15550192834?text=Hi%20StoreBoost!" target="_blank" class="text-brand-whatsapp text-2xl p-1">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
                     <button id="mobileMenuBtn" class="text-gray-300 hover:text-white focus:outline-none p-2">
                         <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
@@ -146,7 +168,14 @@
             <a href="#audit-calculator" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-brand-card">Free Store Review</a>
             <a href="#how-it-works" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-brand-card">How It Works</a>
             <a href="#testimonials" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-brand-card">Why Us</a>
-            <a href="#audit-calculator" class="mobile-link block w-full text-center orange-btn-glow mt-4 px-5 py-3 rounded-xl bg-gradient-to-r from-brand-orange to-amber-500 text-white font-semibold">
+            
+            <div class="flex items-center justify-around py-3 border-t border-brand-border/60">
+                <a href="https://facebook.com/storeboostecommerceservices" target="_blank" class="text-gray-300 hover:text-blue-500 text-xl"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/storeboostecommerceservices" target="_blank" class="text-gray-300 hover:text-pink-500 text-xl"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/15550192834?text=Hi%20StoreBoost!" target="_blank" class="text-brand-whatsapp text-xl"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+            <a href="#audit-calculator" class="mobile-link block w-full text-center orange-btn-glow px-5 py-3 rounded-xl bg-gradient-to-r from-brand-orange to-amber-500 text-white font-semibold">
                 Free Store Review
             </a>
         </div>
@@ -179,15 +208,15 @@
                         We help online sellers with high-converting product listings, store setup, bulk uploads, shipping support & daily store management on <span class="text-white font-semibold">Shopify, Amazon, Etsy</span> and more.
                     </p>
 
-                    <!-- Dual CTAs -->
+                    <!-- Dual CTAs (Claim Audit + Direct WhatsApp Chat) -->
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
                         <a href="#audit-calculator" class="w-full sm:w-auto orange-btn-glow px-8 py-4 rounded-xl bg-gradient-to-r from-brand-orange to-amber-500 text-white font-bold text-base flex items-center justify-center gap-3">
                             <span>Claim Free Store Review</span>
                             <i class="fa-solid fa-arrow-right text-sm"></i>
                         </a>
-                        <a href="#services" class="w-full sm:w-auto px-7 py-4 rounded-xl glass-card text-gray-200 hover:text-white font-semibold text-base flex items-center justify-center gap-2 border border-brand-border hover:border-brand-green transition-all">
-                            <i class="fa-solid fa-list-check text-brand-green"></i>
-                            <span>Explore Services</span>
+                        <a href="https://wa.me/15550192834?text=Hi%20StoreBoost,%20I%20want%20to%20ask%20a%20question%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-emerald-950/80 hover:bg-emerald-900/90 text-white font-semibold text-base flex items-center justify-center gap-3 border border-brand-whatsapp/60 transition-all shadow-lg">
+                            <i class="fa-brands fa-whatsapp text-brand-whatsapp text-xl"></i>
+                            <span>Chat on WhatsApp</span>
                         </a>
                     </div>
 
@@ -408,7 +437,7 @@
                             Have specific store needs or high-volume catalogs? Contact us for a tailored virtual assistant or full management plan.
                         </p>
                     </div>
-                    <a href="#audit-calculator" class="w-full py-3 rounded-xl bg-brand-card hover:bg-brand-border text-center text-brand-orange font-semibold text-sm border border-brand-orange/30 block transition-colors">
+                    <a href="https://wa.me/15550192834?text=Hi%20StoreBoost,%20I%20need%20a%20custom%20e-commerce%20management%20plan." target="_blank" class="w-full py-3 rounded-xl bg-brand-card hover:bg-brand-border text-center text-brand-orange font-semibold text-sm border border-brand-orange/30 block transition-colors">
                         Request Custom Plan
                     </a>
                 </div>
@@ -483,8 +512,8 @@
                             <input type="text" id="clientName" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-brand-card border border-brand-border text-white placeholder-gray-500 focus:outline-none focus:border-brand-green transition-colors text-sm">
                         </div>
                         <div>
-                            <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">WhatsApp / Email for Results</label>
-                            <input type="text" id="clientContact" required placeholder="Email or Phone Number" class="w-full px-4 py-3 rounded-xl bg-brand-card border border-brand-border text-white placeholder-gray-500 focus:outline-none focus:border-brand-green transition-colors text-sm">
+                            <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">WhatsApp Number / Email</label>
+                            <input type="text" id="clientContact" required placeholder="+1 234 567 8900" class="w-full px-4 py-3 rounded-xl bg-brand-card border border-brand-border text-white placeholder-gray-500 focus:outline-none focus:border-brand-green transition-colors text-sm">
                         </div>
                     </div>
 
@@ -500,12 +529,16 @@
                     <div class="w-12 h-12 rounded-full bg-brand-green/20 text-brand-green flex items-center justify-center mx-auto text-xl">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white">Review Request Received!</h3>
+                    <h3 class="text-xl font-bold text-white">Review Request Ready!</h3>
                     <p id="resultText" class="text-sm text-gray-300 max-w-lg mx-auto"></p>
-                    <div class="pt-2">
-                        <a id="dmLink" href="https://m.me/" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-brand-green text-white font-bold text-sm hover:bg-emerald-600 transition-colors">
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+                        <a id="waResultLink" href="#" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-brand-whatsapp text-white font-bold text-sm hover:opacity-90 transition-opacity">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            Send to WhatsApp Support
+                        </a>
+                        <a id="fbResultLink" href="https://facebook.com/storeboostecommerceservices" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-blue-600 text-white font-bold text-sm hover:bg-blue-700 transition-colors">
                             <i class="fa-brands fa-facebook-messenger text-lg"></i>
-                            Connect Directly on Facebook DM
+                            Send via Facebook DM
                         </a>
                     </div>
                 </div>
@@ -534,7 +567,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-white mb-2">Claim Free Audit</h3>
                     <p class="text-gray-400 text-sm">
-                        Send us a direct message or submit the review form with your store link and goals.
+                        Send us a direct message on WhatsApp/Facebook or submit the review form with your store link.
                     </p>
                 </div>
 
@@ -563,7 +596,7 @@
         </div>
     </section>
 
-    <!-- Testimonials / Client Trust Section -->
+    <!-- Testimonials Section -->
     <section id="testimonials" class="py-20 bg-brand-surface/60 border-t border-brand-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -658,12 +691,16 @@
                     Ready to Boost Your Ecommerce Sales?
                 </h2>
                 <p class="text-gray-300 text-sm sm:text-base max-w-xl mx-auto">
-                    Get in touch with us today on Facebook for your free quick store review or consultation.
+                    Get in touch with us today via WhatsApp, Facebook, or Instagram for your free store consultation.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
                     <a href="#audit-calculator" class="w-full sm:w-auto orange-btn-glow px-8 py-4 rounded-xl bg-gradient-to-r from-brand-orange to-amber-500 text-white font-bold text-base flex items-center justify-center gap-2">
                         <i class="fa-solid fa-bolt"></i>
                         Claim Free Store Review
+                    </a>
+                    <a href="https://wa.me/15550192834?text=Hi%20StoreBoost,%20I%20would%20like%20to%20consult%20about%20my%20store." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-whatsapp text-white font-bold text-base flex items-center justify-center gap-2 shadow-lg hover:opacity-90 transition-opacity">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        Contact Support
                     </a>
                 </div>
             </div>
@@ -702,18 +739,18 @@
                 <div>
                     <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Connect With Us</h4>
                     <div class="flex items-center gap-3">
-                        <a href="#" class="w-9 h-9 rounded-xl glass-card flex items-center justify-center text-gray-300 hover:text-brand-green hover:border-brand-green transition-colors">
+                        <a href="https://facebook.com/storeboostecommerceservices" target="_blank" rel="noopener noreferrer" title="Facebook" class="w-9 h-9 rounded-xl glass-card flex items-center justify-center text-gray-300 hover:text-blue-500 hover:border-blue-500 transition-colors">
                             <i class="fa-brands fa-facebook-f text-sm"></i>
                         </a>
-                        <a href="#" class="w-9 h-9 rounded-xl glass-card flex items-center justify-center text-gray-300 hover:text-brand-orange hover:border-brand-orange transition-colors">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <a href="https://instagram.com/storeboostecommerceservices" target="_blank" rel="noopener noreferrer" title="Instagram" class="w-9 h-9 rounded-xl glass-card flex items-center justify-center text-gray-300 hover:text-pink-500 hover:border-pink-500 transition-colors">
+                            <i class="fa-brands fa-instagram text-sm"></i>
                         </a>
-                        <a href="#" class="w-9 h-9 rounded-xl glass-card flex items-center justify-center text-gray-300 hover:text-brand-green hover:border-brand-green transition-colors">
-                            <i class="fa-solid fa-envelope text-sm"></i>
+                        <a href="https://wa.me/15550192834" target="_blank" rel="noopener noreferrer" title="WhatsApp" class="w-9 h-9 rounded-xl glass-card flex items-center justify-center text-gray-300 hover:text-brand-whatsapp hover:border-brand-whatsapp transition-colors">
+                            <i class="fa-brands fa-whatsapp text-sm"></i>
                         </a>
                     </div>
                     <p class="text-[11px] text-gray-500 mt-4">
-                        📩 DM us on Facebook for immediate store assistance.
+                        📩 DM us on Facebook, Instagram, or WhatsApp for immediate store assistance.
                     </p>
                 </div>
             </div>
@@ -725,6 +762,20 @@
             </div>
         </div>
     </footer>
+
+    <!-- Persistent Floating WhatsApp Button (Bottom Right) -->
+    <div class="fixed bottom-6 right-6 z-50 flex items-center gap-2 group">
+        <div class="hidden sm:block opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-3 py-1.5 bg-gray-900/90 text-white text-xs font-medium rounded-lg shadow-xl border border-brand-border">
+            Chat with us on WhatsApp!
+        </div>
+        <a href="https://wa.me/15550192834?text=Hi%20StoreBoost,%20I%20am%20visiting%20your%20website%20and%20need%20help%20with%20my%20store." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="w-14 h-14 rounded-full bg-brand-whatsapp text-white flex items-center justify-center text-3xl shadow-2xl whatsapp-glow relative animate-bounce-subtle">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="absolute top-0 right-0 w-3.5 h-3.5 rounded-full bg-red-500 border-2 border-brand-dark animate-pulse"></span>
+        </a>
+    </div>
 
     <!-- Interactive Scripts -->
     <script>
@@ -752,9 +803,16 @@
             const volume = document.getElementById('volumeSelect').value;
             const need = document.getElementById('needSelect').value;
             const clientName = document.getElementById('clientName').value;
+            const clientContact = document.getElementById('clientContact').value;
 
             const resultBox = document.getElementById('resultBox');
             const resultText = document.getElementById('resultText');
+            const waResultLink = document.getElementById('waResultLink');
+
+            // Format message for WhatsApp
+            const message = `Hi StoreBoost! My name is ${encodeURIComponent(clientName)} (${encodeURIComponent(clientContact)}). I would like a free store review for my store "${encodeURIComponent(storeName)}" on ${encodeURIComponent(platform)}. Monthly volume: ${encodeURIComponent(volume)}. Primary need: ${encodeURIComponent(need)}.`;
+            
+            waResultLink.href = `https://wa.me/15550192834?text=${message}`;
 
             resultText.innerHTML = `
                 Thank you, <span class="text-white font-bold">${clientName}</span>! We have prepared a customized review outline for <span class="text-brand-green font-bold">${storeName}</span> on <span class="text-white font-bold">${platform}</span> focusing on <span class="text-brand-orange font-bold">${need}</span>.
