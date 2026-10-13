@@ -31,17 +31,17 @@
         }
     </style>
 </head>
-<body class="bg-darkCharcoal text-white font-sans antialiased selection:bg-emeraldGreen selection:text-white">
+<body class="bg-darkCharcoal text-white font-sans antialiased selection:bg-emeraldGreen selection:text-white scroll-smooth">
 
     <!-- Top Announcement Bar -->
-    <div class="bg-emerald-900/60 border-b border-emerald-700/40 text-xs sm:text-sm py-2 px-4 text-center text-emerald-200">
+    <div class="bg-emerald-900/80 border-b border-emerald-700/40 text-xs sm:text-sm py-2.5 px-4 text-center text-emerald-200">
         🚀 Special Offer: Get a <span class="font-bold text-accentOrange">Free Quick Store Review</span> today via WhatsApp or DM!
     </div>
 
     <!-- Navigation Bar -->
     <nav class="sticky top-0 z-50 backdrop-blur-md bg-darkCharcoal/90 border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
+            <a href="#" class="flex items-center space-x-3">
                 <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-accentOrange flex items-center justify-center shadow-lg">
                     <i class="fa-solid fa-cart-shopping text-white text-lg"></i>
                 </div>
@@ -49,13 +49,15 @@
                     <span class="text-xl font-black tracking-wider bg-gradient-to-r from-white via-gray-200 to-emerald-400 bg-clip-text text-transparent">STOREBOOST</span>
                     <span class="block text-[10px] uppercase tracking-widest text-emerald-400 font-semibold">Ecommerce Services</span>
                 </div>
-            </div>
+            </a>
 
             <!-- Desktop Nav Links & Socials -->
             <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-300">
                 <a href="#services" class="hover:text-emerald-400 transition">Services</a>
-                <a href="#calculator" class="hover:text-emerald-400 transition">Free Store Review</a>
-                <a href="#platforms" class="hover:text-emerald-400 transition">Platforms</a>
+                <a href="#why-us" class="hover:text-emerald-400 transition">Why Us</a>
+                <a href="#how-it-works" class="hover:text-emerald-400 transition">How It Works</a>
+                <a href="#portfolio" class="hover:text-emerald-400 transition">Portfolio</a>
+                <a href="#free-review-form" class="hover:text-emerald-400 transition">Free Store Review</a>
                 
                 <div class="flex items-center space-x-3 pl-4 border-l border-gray-700">
                     <a href="https://www.facebook.com/share/1CYDc55nTn/" target="_blank" class="w-9 h-9 rounded-full bg-gray-800 hover:bg-blue-600 flex items-center justify-center text-gray-300 hover:text-white transition shadow" title="Facebook Page">
@@ -86,14 +88,14 @@
             <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-6">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Professional Ecommerce Agency
             </span>
-            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
                 Supercharge Your <span class="bg-gradient-to-r from-emerald-400 to-accentOrange bg-clip-text text-transparent">Ecommerce Sales</span>
             </h1>
             <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
-                We help online sellers with product listings, store setup, shipping support & daily store management on Shopify, Amazon, Etsy and more.
+                We help online sellers with high-converting product listings, store setup, shipping support & daily store management across Shopify, Amazon, Etsy, and more.
             </p>
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#calculator" class="w-full sm:w-auto bg-gradient-to-r from-accentOrange to-amber-600 hover:from-amber-600 hover:to-accentOrange text-white font-bold px-8 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
+                <a href="#free-review-form" class="w-full sm:w-auto bg-gradient-to-r from-accentOrange to-amber-600 hover:from-amber-600 hover:to-accentOrange text-white font-bold px-8 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
                     <i class="fa-solid fa-calculator mr-2"></i> Get Free Store Review
                 </a>
                 <a href="https://www.facebook.com/share/1CYDc55nTn/" target="_blank" class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 text-white font-semibold px-8 py-4 rounded-xl border border-gray-700 transition flex items-center justify-center gap-2">
@@ -103,7 +105,7 @@
         </div>
     </header>
 
-    <!-- Services Grid Section -->
+    <!-- Services Section -->
     <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
             <h2 class="text-xs font-bold tracking-widest text-emerald-400 uppercase mb-3">Our Core Expertise</h2>
@@ -111,7 +113,6 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Service 1 -->
             <div class="bg-gray-900/60 border border-gray-800 p-8 rounded-2xl hover:border-emerald-500/50 transition group">
                 <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition">
                     <i class="fa-solid fa-list-check"></i>
@@ -120,7 +121,6 @@
                 <p class="text-gray-400 text-sm leading-relaxed">SEO-optimized titles, persuasive descriptions, high-converting bullet points, and clean catalog formatting.</p>
             </div>
 
-            <!-- Service 2 -->
             <div class="bg-gray-900/60 border border-gray-800 p-8 rounded-2xl hover:border-emerald-500/50 transition group">
                 <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition">
                     <i class="fa-solid fa-cloud-arrow-up"></i>
@@ -129,7 +129,6 @@
                 <p class="text-gray-400 text-sm leading-relaxed">Seamlessly upload hundreds or thousands of SKUs via CSV or inventory feeds without errors.</p>
             </div>
 
-            <!-- Service 3 -->
             <div class="bg-gray-900/60 border border-gray-800 p-8 rounded-2xl hover:border-emerald-500/50 transition group">
                 <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition">
                     <i class="fa-solid fa-store"></i>
@@ -138,7 +137,6 @@
                 <p class="text-gray-400 text-sm leading-relaxed">From theme customization and payment gateways to domain setup and shipping profiles ready for sales.</p>
             </div>
 
-            <!-- Service 4 -->
             <div class="bg-gray-900/60 border border-gray-800 p-8 rounded-2xl hover:border-emerald-500/50 transition group">
                 <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition">
                     <i class="fa-solid fa-truck-fast"></i>
@@ -147,7 +145,6 @@
                 <p class="text-gray-400 text-sm leading-relaxed">Fulfillment tracking, inventory synchronization, and customer shipping inquiry support.</p>
             </div>
 
-            <!-- Service 5 -->
             <div class="bg-gray-900/60 border border-gray-800 p-8 rounded-2xl hover:border-emerald-500/50 transition group">
                 <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition">
                     <i class="fa-solid fa-chart-line"></i>
@@ -156,7 +153,6 @@
                 <p class="text-gray-400 text-sm leading-relaxed">Ongoing upkeep, inventory updates, pricing adjustments, and daily maintenance so you can focus on scaling.</p>
             </div>
 
-            <!-- Service 6 -->
             <div class="bg-gray-900/60 border border-gray-800 p-8 rounded-2xl hover:border-accentOrange/50 transition group">
                 <div class="w-14 h-14 rounded-xl bg-accentOrange/10 text-accentOrange flex items-center justify-center text-2xl mb-6 group-hover:bg-accentOrange group-hover:text-white transition">
                     <i class="fa-solid fa-comments"></i>
@@ -167,22 +163,157 @@
         </div>
     </section>
 
-    <!-- Interactive Free Store Review Calculator -->
-    <section id="calculator" class="py-20 bg-gradient-to-b from-darkCharcoal via-emerald-950/30 to-darkCharcoal border-y border-gray-800">
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-20 bg-emerald-950/20 border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-bold tracking-widest text-emerald-400 uppercase mb-3">Why Choose StoreBoost</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold">Built to Accelerate Your Brand's Growth</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-900/80 p-6 rounded-2xl border border-gray-800 text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Experienced Specialists</h4>
+                    <p class="text-gray-400 text-sm">Proven experts specializing in copy, SEO, design, and marketplace operations.</p>
+                </div>
+
+                <div class="bg-gray-900/80 p-6 rounded-2xl border border-gray-800 text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Multi-Platform Support</h4>
+                    <p class="text-gray-400 text-sm">Seamless support across Shopify, Amazon, Etsy, WooCommerce, and eBay.</p>
+                </div>
+
+                <div class="bg-gray-900/80 p-6 rounded-2xl border border-gray-800 text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Fast Turnaround</h4>
+                    <p class="text-gray-400 text-sm">Rapid execution and 99.9% data accuracy on bulk uploads and listings.</p>
+                </div>
+
+                <div class="bg-gray-900/80 p-6 rounded-2xl border border-gray-800 text-center">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2">Dedicated Management</h4>
+                    <p class="text-gray-400 text-sm">Continuous daily maintenance, inventory sync, and hands-on client support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-xs font-bold tracking-widest text-emerald-400 uppercase mb-3">Simple 3-Step Process</h2>
+            <h3 class="text-3xl sm:text-4xl font-bold">How We Scale Your Online Store</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+            <div class="bg-gray-900/60 border border-gray-800 p-8 rounded-2xl relative text-center">
+                <span class="inline-block w-12 h-12 rounded-full bg-accentOrange text-white font-extrabold text-xl leading-12 mb-6">1</span>
+                <h4 class="text-xl font-bold mb-3">Submit Store Details</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Fill out our quick review request form below or contact us directly on WhatsApp with your store link.</p>
+            </div>
+
+            <div class="bg-gray-900/60 border border-gray-800 p-8 rounded-2xl relative text-center">
+                <span class="inline-block w-12 h-12 rounded-full bg-emerald-600 text-white font-extrabold text-xl leading-12 mb-6">2</span>
+                <h4 class="text-xl font-bold mb-3">Analyze & Audit</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Our team evaluates your current listings, store design, keywords, and conversion bottlenecks.</p>
+            </div>
+
+            <div class="bg-gray-900/60 border border-gray-800 p-8 rounded-2xl relative text-center">
+                <span class="inline-block w-12 h-12 rounded-full bg-amber-500 text-white font-extrabold text-xl leading-12 mb-6">3</span>
+                <h4 class="text-xl font-bold mb-3">Optimize & Scale</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">We implement keyword-rich content, polished graphics, and store fixes to drive maximum sales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Highlights Section -->
+    <section id="portfolio" class="py-20 bg-gray-950 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-bold tracking-widest text-emerald-400 uppercase mb-3">Proven Transformation</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold">Before & After Listing Optimization</h3>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Case Study 1 -->
+                <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+                    <div class="p-6 border-b border-gray-800 flex justify-between items-center">
+                        <span class="font-bold text-lg text-emerald-400"><i class="fa-brands fa-amazon mr-2 text-amber-500"></i> Amazon FBA Listing</span>
+                        <span class="text-xs bg-emerald-500/10 text-emerald-400 px-3 py-1 rounded-full border border-emerald-500/30">Transformation #1</span>
+                    </div>
+                    <div class="p-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-red-950/30 border border-red-800/40 p-4 rounded-xl">
+                            <span class="text-xs font-bold text-red-400 uppercase tracking-wider block mb-2">❌ Before StoreBoost</span>
+                            <p class="font-bold text-sm text-gray-200">Insulated Water Bottle</p>
+                            <p class="text-xs text-gray-400 mt-2">Plain manufacturer copy, zero SEO keywords, short bullet points, generic image.</p>
+                        </div>
+                        <div class="bg-emerald-950/30 border border-emerald-800/40 p-4 rounded-xl">
+                            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider block mb-2">✅ After StoreBoost</span>
+                            <p class="font-bold text-sm text-gray-200">32oz Vacuum Thermo Flask w/ Straw Lid</p>
+                            <p class="text-xs text-gray-400 mt-2">Fully keyword-optimized title, 24H Cold / 12H Hot badges, conversion bullet points.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
+                    <div class="p-6 border-b border-gray-800 flex justify-between items-center">
+                        <span class="font-bold text-lg text-emerald-400"><i class="fa-brands fa-shopify mr-2 text-emerald-400"></i> Shopify Store Page</span>
+                        <span class="text-xs bg-emerald-500/10 text-emerald-400 px-3 py-1 rounded-full border border-emerald-500/30">Transformation #2</span>
+                    </div>
+                    <div class="p-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-red-950/30 border border-red-800/40 p-4 rounded-xl">
+                            <span class="text-xs font-bold text-red-400 uppercase tracking-wider block mb-2">❌ Before StoreBoost</span>
+                            <p class="font-bold text-sm text-gray-200">Organic Glow Face Serum</p>
+                            <p class="text-xs text-gray-400 mt-2">Basic dropshipping description, no trust badges, low conversion layout.</p>
+                        </div>
+                        <div class="bg-emerald-950/30 border border-emerald-800/40 p-4 rounded-xl">
+                            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider block mb-2">✅ After StoreBoost</span>
+                            <p class="font-bold text-sm text-gray-200">Pure Glow Vit C + Hyaluronic Serum</p>
+                            <p class="text-xs text-gray-400 mt-2">Structured benefit tabs, organic badges, ingredient highlights & step-by-step usage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Store Review Form Section -->
+    <section id="free-review-form" class="py-20 bg-gradient-to-b from-darkCharcoal via-emerald-950/30 to-darkCharcoal border-y border-gray-800">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gray-900 border border-emerald-500/30 rounded-3xl p-6 sm:p-10 shadow-2xl relative">
                 <div class="absolute -top-4 right-6 bg-accentOrange text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
-                    Interactive Tool
+                    Free Consultation
                 </div>
 
                 <div class="text-center mb-8">
                     <h3 class="text-2xl sm:text-3xl font-bold mb-2">Request Your Free Store Review</h3>
-                    <p class="text-gray-400 text-sm">Select your platform and primary need below to generate your review request.</p>
+                    <p class="text-gray-400 text-sm">Fill out your store details below and our team will analyze your store and connect with you on WhatsApp!</p>
                 </div>
 
-                <form id="reviewForm" class="space-y-6">
+                <form id="storeReviewForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold mb-2 text-gray-300 uppercase tracking-wider">Your Name *</label>
+                            <input type="text" id="userName" required placeholder="e.g. Alex Johnson" class="w-full bg-gray-800 border border-gray-700 rounded-xl p-3.5 text-sm text-white focus:outline-none focus:border-emerald-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold mb-2 text-gray-300 uppercase tracking-wider">Email or Phone Number *</label>
+                            <input type="text" id="userContact" required placeholder="e.g. alex@example.com / +123456789" class="w-full bg-gray-800 border border-gray-700 rounded-xl p-3.5 text-sm text-white focus:outline-none focus:border-emerald-500 transition">
+                        </div>
+                    </div>
+
                     <div>
-                        <label class="block text-sm font-semibold mb-2 text-gray-300">1. Select Your Primary Selling Platform:</label>
+                        <label class="block text-xs font-semibold mb-2 text-gray-300 uppercase tracking-wider">1. Select Your Platform *</label>
                         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
                             <label class="border border-gray-700 bg-gray-800/50 rounded-xl p-3 text-center cursor-pointer hover:border-emerald-500 has-[:checked]:border-emerald-500 has-[:checked]:bg-emerald-950/40 transition">
                                 <input type="radio" name="platform" value="Shopify" class="hidden" checked>
@@ -204,19 +335,24 @@
                     </div>
 
                     <div>
-                        <label class="block text-sm font-semibold mb-2 text-gray-300">2. What do you need help with most?</label>
-                        <select id="serviceNeed" class="w-full bg-gray-800 border border-gray-700 rounded-xl p-3 text-sm focus:outline-none focus:border-emerald-500">
-                            <option value="Product Listings & Optimization">Product Listings & Optimization</option>
-                            <option value="Bulk Uploads">Bulk Uploads</option>
-                            <option value="Complete Store Setup">Complete Store Setup</option>
-                            <option value="Order & Shipping Support">Order & Shipping Support</option>
-                            <option value="Daily Store Management">Daily Store Management</option>
+                        <label class="block text-xs font-semibold mb-2 text-gray-300 uppercase tracking-wider">Store URL (Optional)</label>
+                        <input type="text" id="storeUrl" placeholder="e.g. https://yourstore.com" class="w-full bg-gray-800 border border-gray-700 rounded-xl p-3.5 text-sm text-white focus:outline-none focus:border-emerald-500 transition">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold mb-2 text-gray-300 uppercase tracking-wider">2. Primary Challenge / Service Needed *</label>
+                        <select id="primaryChallenge" class="w-full bg-gray-800 border border-gray-700 rounded-xl p-3.5 text-sm text-white focus:outline-none focus:border-emerald-500 transition">
+                            <option value="Product Listings & SEO Optimization">Product Listings & SEO Optimization</option>
+                            <option value="Bulk Catalog Uploads">Bulk Catalog Uploads</option>
+                            <option value="Complete Store Redesign / Setup">Complete Store Redesign / Setup</option>
+                            <option value="Shipping & Order Management">Shipping & Order Management</option>
+                            <option value="Daily Ongoing Store Maintenance">Daily Ongoing Store Maintenance</option>
                         </select>
                     </div>
 
-                    <div class="pt-4">
-                        <button type="button" onclick="submitReview()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
-                            <i class="fa-brands fa-whatsapp text-xl"></i> Send Review Request on WhatsApp
+                    <div class="pt-2">
+                        <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-base">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Submit & Request WhatsApp Review
                         </button>
                     </div>
                 </form>
@@ -224,14 +360,15 @@
         </div>
     </section>
 
-    <!-- Platforms Supported -->
+    <!-- Supported Platforms -->
     <section id="platforms" class="py-16 max-w-7xl mx-auto px-4 text-center">
-        <h4 class="text-sm font-semibold tracking-widest uppercase text-gray-400 mb-8">Supported Marketplaces & Platforms</h4>
-        <div class="flex flex-wrap justify-center items-center gap-8 sm:gap-16 opacity-80">
+        <h4 class="text-sm font-semibold tracking-widest uppercase text-gray-400 mb-8">Supported Marketplaces & Ecommerce Engines</h4>
+        <div class="flex flex-wrap justify-center items-center gap-8 sm:gap-14 opacity-80">
             <div class="flex items-center gap-2 text-xl font-bold"><i class="fa-brands fa-shopify text-emerald-400"></i> Shopify</div>
             <div class="flex items-center gap-2 text-xl font-bold"><i class="fa-brands fa-amazon text-amber-500"></i> Amazon</div>
             <div class="flex items-center gap-2 text-xl font-bold"><i class="fa-solid fa-store text-orange-500"></i> Etsy</div>
-            <div class="flex items-center gap-2 text-xl font-bold"><i class="fa-solid fa-globe text-blue-400"></i> & More</div>
+            <div class="flex items-center gap-2 text-xl font-bold"><i class="fa-brands fa-wordpress text-blue-500"></i> WooCommerce</div>
+            <div class="flex items-center gap-2 text-xl font-bold"><i class="fa-brands fa-ebay text-red-500"></i> eBay</div>
         </div>
     </section>
 
@@ -263,8 +400,21 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        function submitReview() {
-            window.open('https://wa.me/message/EVV5344OGQ3JJ1', '_blank');
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('userName').value;
+            const contact = document.getElementById('userContact').value;
+            const platform = document.querySelector('input[name="platform"]:checked').value;
+            const storeUrl = document.getElementById('storeUrl').value || 'Not provided';
+            const challenge = document.getElementById('primaryChallenge').value;
+
+            const formattedMessage = `Hi StoreBoost! I'd like to request a Free Store Review.\n\n👤 Name: ${name}\n📞 Contact: ${contact}\n🛒 Platform: ${platform}\n🌐 Store URL: ${storeUrl}\n🎯 Primary Need: ${challenge}`;
+            
+            const encodedMessage = encodeURIComponent(formattedMessage);
+            
+            // Redirect to custom WhatsApp link with compiled request
+            window.open(`https://wa.me/message/EVV5344OGQ3JJ1?text=${encodedMessage}`, '_blank');
         }
     </script>
 </body>
